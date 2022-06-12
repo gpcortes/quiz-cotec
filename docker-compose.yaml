@@ -1,0 +1,11 @@
+version: "3.4.0"
+
+services:
+  quiz-cotec:
+    image: quiz-cotec
+    container_name: quiz-cotec
+
+networks:
+  default:
+    name: backend
+    external: true
