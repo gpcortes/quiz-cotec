@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from '@material-ui/core/Button';
 import ButtonGroup from "@material-ui/core/ButtonGroup";
-import Confirm from "./Confirm";
+import Confirm from "./components/Confirm";
 import Presentation from "./components/Presentation";
 
 export default function TypeForm({ children, onSubmit, fields, setFields, answers }) {
