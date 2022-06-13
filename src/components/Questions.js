@@ -26,7 +26,7 @@ const questions = [
   {
     title: "Com o que você mais se identifica?",
     options: [
-      { value: "a", label: "Controle do tempo, commando e execução" },
+      { value: "a", label: "Controle do tempo, comando e execução" },
       { value: "b", label: "Discurso, Argumentação e persuasão" },
       { value: "c", label: "Sistemas e construção" },
       { value: "d", label: "Praticidade e curiosidade" },
