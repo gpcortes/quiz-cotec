@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import FormControl from '@material-ui/core/FormControl';
 import { Box, Button, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Logo from "./Logo";
 
 const useStyles = makeStyles((theme) => ({
   question: {
@@ -20,6 +21,12 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1)
     },
   },
+  logo: {
+    ['@media (min-width:769px)']: {
+      margin: "0 auto",
+      width: "60%",
+    },
+  },
 }));
 
 export default function Presentation({ index, onClick }) {
@@ -32,9 +39,11 @@ export default function Presentation({ index, onClick }) {
         animate={{ x: 0 }}
         transition={{ stiffness: 150 }}
       >
+        <Box className={classes.logo} >
+          <Logo />
+        </Box>
         <Box key={index} className={classes.question}>
           <Typography variant="h1" style={{
-
             textAlign: "center",
           }}>Vamos descobrir qual o curso que você vai fazer?</Typography>
           <Button variant="contained" color="primary" onClick={onClick}>Vamos começar</Button>
